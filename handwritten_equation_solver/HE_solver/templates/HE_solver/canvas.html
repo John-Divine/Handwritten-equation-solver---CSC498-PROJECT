@@ -1,0 +1,101 @@
+{% load static %}
+  <html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- External CSS Document(s) -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<title>Online Drawing Application | Web Design Deluxe</title>
+
+<!-- Eternal JavaScript Document(s) -->
+  <script src="{% static 'js/canvas.js' %}"></script>
+
+</head>
+<body>
+
+<!-- Wrapper Begins -->   <div id="wrapper">
+        <!-- Color Table (controlled in JavaScript) -->
+<div id="colorTable"></div>
+<!-- Toggle Color Button -->
+<div id="color" title="Toggle Color">
+<img src="images/color-arrow.png" alt="Toggle Color" width="16" height="16" />
+</div>
+
+        <div id="blackboardPlaceholder">
+            <p style="display:none"><!-- Tool Selector -->
+            <select name="selector" id="selector">
+            <option value="chalk">Chalk</option>
+            <option value="line">Line</option>
+            <option value="rect">Rectangle</option>
+            </select>
+            </p>
+            <!-- Canvas Begins -->
+           <canvas id="drawingCanvas" height="532" width="897">
+            <p class="noscript">We're sorry, this web application is currently not supported with your browser. Please use an alternate browser or download a supported <br />browser. Supported browsers: <a href="http://www.google.com/chrome">Google Chrome</a>, <a href="http://www.opera.com">Opera</a>, <a href="http://www.mozilla.com">Firefox</a>, <a href="http://www.apple.com/safari">Safari</a>, <br />and <a href="http://www.konqueror.org">Konqueror</a>. Also make sure your JavaScript is enabled.</p>
+           </canvas>
+            <!-- Canvas Ends -->
+            <div>
+                <!-- Chalk Pieces -->
+<div id="whiteChalk_button">
+<img src="images/white.png" width="71" height="17" onclick="context.strokeStyle = '#FFFFFF';" />
+</div>
+<div id="redChalk_button">
+<img src="images/red.png" width="71" height="17" onclick="context.strokeStyle = '#F00000';" />
+</div>
+<div id="orangeChalk_button">
+<img src="images/orange.png" width="71" height="17" onclick="context.strokeStyle = '#ff9600';" />
+</div>
+<div id="yellowChalk_button">
+<img src="images/yellow.png" width="71" height="17" onclick="context.strokeStyle = '#fff600';" />
+</div>
+<div id="greenChalk_button">
+<img src="images/green.png" width="71" height="17" onclick="context.strokeStyle = '#48ff00';" />
+</div>
+<div id="blueChalk_button">
+<img src="images/blue.png" width="71" height="17" onclick="context.strokeStyle = '#001eff';" />
+</div>
+<div id="pinkChalk_button">
+<img src="images/pink.png" width="71" height="17" onclick="context.strokeStyle = '#ff00d2';" />
+</div>
+            </div>
+            <!-- Eraser -->
+       <div id="eraser" onclick="context.strokeStyle = '#424242'; context.lineWidth = '22';"></div>
+
+        </div>
+    <!-- Toggle Stroke Weight -->
+<img src="images/toggle.png" width="16" height="16" id="stroke-subtract" title="Decrease Stroke" onclick="context.lineWidth--;" />
+<img src="images/toggle-expand.png" width="16" height="16" id="stroke-add" title="Increase Stroke" onclick="context.lineWidth++;" />
+
+    <!-- Toggle Stroke Weight -->
+<img src="images/toggle.png" width="16" height="16" id="stroke-subtract" title="Decrease Stroke" onclick="context.lineWidth--;" />
+<img src="images/toggle-expand.png" width="16" height="16" id="stroke-add" title="Increase Stroke" onclick="context.lineWidth++;" />
+ <!-- Stroke Weight Panel -->
+<div id="strokeWeight">
+<img src="images/stroke1.png" alt="1.0" class="stroke" width="30" height="32" onclick="context.lineWidth = '1.0';" />
+<img src="images/stroke2.png" alt="6.0" class="stroke" width="30" height="32" onclick="context.lineWidth = '6.0';" />
+<img src="images/stroke3.png" alt="9.0" class="stroke" width="30" height="32" onclick="context.lineWidth = '9.0';" />
+<img src="images/stroke4.png" alt="13.0" class="stroke" width="30" height="32" onclick="context.lineWidth = '13.0';" />
+</div>
+    <!-- Clear Canvas Button -->
+<div id="nuke" title="Clear Canvas">
+<a href="javascript:location.reload(true)">
+<img src="images/burn.png" alt="Clear Canvas" width="16" height="16" />
+</a>
+</div>
+
+    </div>
+  <!-- Save Image -->
+<div id="saveWrapper">
+<div id="save">
+<img src="images/save.png" alt="Save Image" width="16" height="16" id="convertpngbtn" title="Save Image" />
+</div>
+<div id="textdownload">
+ Right click the image to download.
+ <img src="images/cross.png" alt="Cancel" width="16" height="16" id="resetbtn" title="Continue Drawing" />
+</div>
+</div>
+
+</body>
+</html>
