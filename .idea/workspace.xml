@@ -31,12 +31,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/handwritten_equation_solver/static_root/js" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/handwritten_equation_solver/HE_solver/templates/HE_solver" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Google_Brain-Storm\Documents\GitHub\Handwritten equation solver - CSC498-PROJECT\handwritten_equation_solver\HE_solver\templates\HE_solver" />
+      <recent name="C:\Users\Google_Brain-Storm\Documents\GitHub\Handwritten equation solver - CSC498-PROJECT\handwritten_equation_solver\static_root" />
       <recent name="C:\Users\Google_Brain-Storm\Documents\GitHub\Handwritten equation solver - CSC498-PROJECT\handwritten_equation_solver\static_root\css" />
+      <recent name="C:\Users\Google_Brain-Storm\Documents\GitHub\Handwritten equation solver - CSC498-PROJECT\handwritten_equation_solver\static_root\images" />
       <recent name="C:\Users\Google_Brain-Storm\Documents\GitHub\Handwritten equation solver - CSC498-PROJECT\handwritten_equation_solver\static_root\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
