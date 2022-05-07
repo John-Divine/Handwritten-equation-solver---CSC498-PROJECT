@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="webDev" />
     <orderEntry type="module" module-name="Equation-Solver-master" />
+    <orderEntry type="module" module-name="Languages-and-compilers" />
   </component>
 </module>
